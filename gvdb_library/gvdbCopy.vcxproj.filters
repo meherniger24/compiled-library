@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\gvdb-voxels 3\build\CMakeFiles\8192fc9114bb85fef2188ea9fa36c5e2\copiedPTX.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\gvdb-voxels 3\build\CMakeFiles\8192fc9114bb85fef2188ea9fa36c5e2\copiedShaders.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\gvdb-voxels 3\build\CMakeFiles\8192fc9114bb85fef2188ea9fa36c5e2\copiedSharedLibraries.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\gvdb-voxels 3\build\CMakeFiles\b674079a231db5b5667c512e8f423019\gvdbCopy.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\gvdb-voxels 3\build\gvdb_library\CMakeFiles\gvdbCopy" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{8AEA375B-5895-35AD-8B37-3456A950B625}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

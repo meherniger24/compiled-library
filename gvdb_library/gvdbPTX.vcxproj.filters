@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="..\..\gvdb-voxels 3\source\gvdb_library\kernels\cuda_gvdb_copydata.cu">
+      <Filter>Source Files</Filter>
+    </CudaCompile>
+    <CudaCompile Include="..\..\gvdb-voxels 3\source\gvdb_library\kernels\cuda_gvdb_module.cu">
+      <Filter>Source Files</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\kernels\cuda_gvdb.cuh" />
+    <None Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\kernels\cuda_gvdb_dda.cuh" />
+    <None Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\kernels\cuda_gvdb_geom.cuh" />
+    <None Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\kernels\cuda_gvdb_nodes.cuh" />
+    <None Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\kernels\cuda_gvdb_operators.cuh" />
+    <None Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\kernels\cuda_gvdb_particles.cuh" />
+    <None Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\kernels\cuda_gvdb_raycast.cuh" />
+    <None Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\kernels\cuda_gvdb_scene.cuh" />
+    <None Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\kernels\cuda_math.cuh" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C6E49A58-4ECC-376E-8630-2928BC4F9ED3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

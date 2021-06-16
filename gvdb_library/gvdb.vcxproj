@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{68A00431-CD86-37A7-AD63-A9514BF450AB}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>gvdb</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <VcpkgEnabled>false</VcpkgEnabled>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.3.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="do_not_import_user.props" Condition="exists('do_not_import_user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\gvdb-voxels 3\build\gvdb_library\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gvdb.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gvdb</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\gvdb-voxels 3\build\gvdb_library\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gvdb.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gvdb</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\gvdb-voxels 3\build\gvdb_library\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">gvdb.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">gvdb</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\gvdb-voxels 3\build\gvdb_library\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">gvdb.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">gvdb</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3\include;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\include;C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;BUILD_OPENVDB;__TBB_NO_IMPLICIT_LINKAGE;BUILD_OPENGL;GVDB_EXPORTS;GLEW_STATIC;CUDA_GVDB_COPYDATA_PTX="cuda_gvdb_copydata.ptx";CUDA_GVDB_MODULE_PTX="cuda_gvdb_module.ptx";CMAKE_INTDIR="Debug";gvdb_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;BUILD_OPENVDB;__TBB_NO_IMPLICIT_LINKAGE;BUILD_OPENGL;GVDB_EXPORTS;GLEW_STATIC;CUDA_GVDB_COPYDATA_PTX=\"cuda_gvdb_copydata.ptx\";CUDA_GVDB_MODULE_PTX=\"cuda_gvdb_module.ptx\";CMAKE_INTDIR=\"Debug\";gvdb_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3\include;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\include;C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CudaCompile>
+      <Include>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3\include;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\include;C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\glew\include;%(Include)</Include>
+      <Defines>_WINDOWS;BUILD_OPENVDB;__TBB_NO_IMPLICIT_LINKAGE;BUILD_OPENGL;GVDB_EXPORTS;GLEW_STATIC;CUDA_GVDB_COPYDATA_PTX="cuda_gvdb_copydata.ptx";CUDA_GVDB_MODULE_PTX="cuda_gvdb_module.ptx";CMAKE_INTDIR="Debug";gvdb_EXPORTS;%(Defines)</Defines>
+      <AdditionalOptions>%(AdditionalOptions) -Xcompiler="/EHsc -Zi -Ob0"</AdditionalOptions>
+      <CompileOut>$(IntDir)%(Filename).obj</CompileOut>
+      <CudaRuntime>Static</CudaRuntime>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <Optimization>Od</Optimization>
+      <Runtime>MDd</Runtime>
+      <RuntimeChecks>RTC1</RuntimeChecks>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <TypeInfo>true</TypeInfo>
+      <UseHostInclude>false</UseHostInclude>
+      <Warning>W3</Warning>
+    </CudaCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3\include;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\include;C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/mniger/Desktop/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary "C:/gvdb-voxels 3/build/gvdb_library/Debug/gvdb.dll" -installedDir C:/Users/mniger/Desktop/vcpkg/installed/x64-windows/debug/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3\lib\x64\cuda.lib;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\debug\lib\openvdb.lib;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\debug\lib\tbb_debug.lib;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\debug\lib\blosc.lib;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\debug\lib\zlibd.lib;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\debug\lib\Half-2_5_d.lib;cudadevrt.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/gvdb-voxels 3/build/gvdb_library/Debug/gvdb.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/gvdb-voxels 3/build/gvdb_library/Debug/gvdb.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-forward-unknown-to-host-compiler -Wno-deprecated-gpu-targets </AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3\include;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\include;C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILD_OPENVDB;__TBB_NO_IMPLICIT_LINKAGE;BUILD_OPENGL;GVDB_EXPORTS;GLEW_STATIC;CUDA_GVDB_COPYDATA_PTX="cuda_gvdb_copydata.ptx";CUDA_GVDB_MODULE_PTX="cuda_gvdb_module.ptx";CMAKE_INTDIR="Release";gvdb_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILD_OPENVDB;__TBB_NO_IMPLICIT_LINKAGE;BUILD_OPENGL;GVDB_EXPORTS;GLEW_STATIC;CUDA_GVDB_COPYDATA_PTX=\"cuda_gvdb_copydata.ptx\";CUDA_GVDB_MODULE_PTX=\"cuda_gvdb_module.ptx\";CMAKE_INTDIR=\"Release\";gvdb_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3\include;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\include;C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CudaCompile>
+      <Include>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3\include;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\include;C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\glew\include;%(Include)</Include>
+      <Defines>_WINDOWS;NDEBUG;BUILD_OPENVDB;__TBB_NO_IMPLICIT_LINKAGE;BUILD_OPENGL;GVDB_EXPORTS;GLEW_STATIC;CUDA_GVDB_COPYDATA_PTX="cuda_gvdb_copydata.ptx";CUDA_GVDB_MODULE_PTX="cuda_gvdb_module.ptx";CMAKE_INTDIR="Release";gvdb_EXPORTS;%(Defines)</Defines>
+      <AdditionalOptions>%(AdditionalOptions) -Xcompiler="/EHsc -Ob2"</AdditionalOptions>
+      <CompileOut>$(IntDir)%(Filename).obj</CompileOut>
+      <CudaRuntime>Static</CudaRuntime>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <Optimization>O2</Optimization>
+      <Runtime>MD</Runtime>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <TypeInfo>true</TypeInfo>
+      <UseHostInclude>false</UseHostInclude>
+      <Warning>W3</Warning>
+    </CudaCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3\include;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\include;C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/mniger/Desktop/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary "C:/gvdb-voxels 3/build/gvdb_library/Release/gvdb.dll" -installedDir C:/Users/mniger/Desktop/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3\lib\x64\cuda.lib;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\lib\openvdb.lib;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\lib\tbb.lib;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\lib\blosc.lib;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\lib\zlib.lib;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\lib\Half-2_5.lib;cudadevrt.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/gvdb-voxels 3/build/gvdb_library/Release/gvdb.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/gvdb-voxels 3/build/gvdb_library/Release/gvdb.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-forward-unknown-to-host-compiler -Wno-deprecated-gpu-targets </AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3\include;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\include;C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILD_OPENVDB;__TBB_NO_IMPLICIT_LINKAGE;BUILD_OPENGL;GVDB_EXPORTS;GLEW_STATIC;CUDA_GVDB_COPYDATA_PTX="cuda_gvdb_copydata.ptx";CUDA_GVDB_MODULE_PTX="cuda_gvdb_module.ptx";CMAKE_INTDIR="MinSizeRel";gvdb_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILD_OPENVDB;__TBB_NO_IMPLICIT_LINKAGE;BUILD_OPENGL;GVDB_EXPORTS;GLEW_STATIC;CUDA_GVDB_COPYDATA_PTX=\"cuda_gvdb_copydata.ptx\";CUDA_GVDB_MODULE_PTX=\"cuda_gvdb_module.ptx\";CMAKE_INTDIR=\"MinSizeRel\";gvdb_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3\include;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\include;C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CudaCompile>
+      <Include>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3\include;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\include;C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\glew\include;%(Include)</Include>
+      <Defines>_WINDOWS;NDEBUG;BUILD_OPENVDB;__TBB_NO_IMPLICIT_LINKAGE;BUILD_OPENGL;GVDB_EXPORTS;GLEW_STATIC;CUDA_GVDB_COPYDATA_PTX="cuda_gvdb_copydata.ptx";CUDA_GVDB_MODULE_PTX="cuda_gvdb_module.ptx";CMAKE_INTDIR="MinSizeRel";gvdb_EXPORTS;%(Defines)</Defines>
+      <AdditionalOptions>%(AdditionalOptions) -Xcompiler="/EHsc -Ob1"</AdditionalOptions>
+      <CompileOut>$(IntDir)%(Filename).obj</CompileOut>
+      <CudaRuntime>Static</CudaRuntime>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <Optimization>O1</Optimization>
+      <Runtime>MD</Runtime>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <TypeInfo>true</TypeInfo>
+      <UseHostInclude>false</UseHostInclude>
+      <Warning>W3</Warning>
+    </CudaCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3\include;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\include;C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/mniger/Desktop/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary "C:/gvdb-voxels 3/build/gvdb_library/MinSizeRel/gvdb.dll" -installedDir C:/Users/mniger/Desktop/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3\lib\x64\cuda.lib;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\lib\openvdb.lib;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\lib\tbb.lib;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\lib\blosc.lib;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\lib\zlib.lib;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\lib\Half-2_5.lib;cudadevrt.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/gvdb-voxels 3/build/gvdb_library/MinSizeRel/gvdb.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/gvdb-voxels 3/build/gvdb_library/MinSizeRel/gvdb.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-forward-unknown-to-host-compiler -Wno-deprecated-gpu-targets </AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3\include;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\include;C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILD_OPENVDB;__TBB_NO_IMPLICIT_LINKAGE;BUILD_OPENGL;GVDB_EXPORTS;GLEW_STATIC;CUDA_GVDB_COPYDATA_PTX="cuda_gvdb_copydata.ptx";CUDA_GVDB_MODULE_PTX="cuda_gvdb_module.ptx";CMAKE_INTDIR="RelWithDebInfo";gvdb_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILD_OPENVDB;__TBB_NO_IMPLICIT_LINKAGE;BUILD_OPENGL;GVDB_EXPORTS;GLEW_STATIC;CUDA_GVDB_COPYDATA_PTX=\"cuda_gvdb_copydata.ptx\";CUDA_GVDB_MODULE_PTX=\"cuda_gvdb_module.ptx\";CMAKE_INTDIR=\"RelWithDebInfo\";gvdb_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3\include;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\include;C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CudaCompile>
+      <Include>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3\include;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\include;C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\glew\include;%(Include)</Include>
+      <Defines>_WINDOWS;NDEBUG;BUILD_OPENVDB;__TBB_NO_IMPLICIT_LINKAGE;BUILD_OPENGL;GVDB_EXPORTS;GLEW_STATIC;CUDA_GVDB_COPYDATA_PTX="cuda_gvdb_copydata.ptx";CUDA_GVDB_MODULE_PTX="cuda_gvdb_module.ptx";CMAKE_INTDIR="RelWithDebInfo";gvdb_EXPORTS;%(Defines)</Defines>
+      <AdditionalOptions>%(AdditionalOptions) -Xcompiler="/EHsc -Zi -Ob1"</AdditionalOptions>
+      <CompileOut>$(IntDir)%(Filename).obj</CompileOut>
+      <CudaRuntime>Static</CudaRuntime>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <Optimization>O2</Optimization>
+      <Runtime>MD</Runtime>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <TypeInfo>true</TypeInfo>
+      <UseHostInclude>false</UseHostInclude>
+      <Warning>W3</Warning>
+    </CudaCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3\include;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\include;C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/mniger/Desktop/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary "C:/gvdb-voxels 3/build/gvdb_library/RelWithDebInfo/gvdb.dll" -installedDir C:/Users/mniger/Desktop/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3\lib\x64\cuda.lib;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\lib\openvdb.lib;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\lib\tbb.lib;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\lib\blosc.lib;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\lib\zlib.lib;C:\Users\mniger\Desktop\vcpkg\installed\x64-windows\lib\Half-2_5.lib;cudadevrt.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/gvdb-voxels 3/build/gvdb_library/RelWithDebInfo/gvdb.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/gvdb-voxels 3/build/gvdb_library/RelWithDebInfo/gvdb.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-forward-unknown-to-host-compiler -Wno-deprecated-gpu-targets </AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/gvdb-voxels 3/gvdb-voxels 3/source/gvdb_library/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/gvdb-voxels 3/gvdb-voxels 3" "-BC:/gvdb-voxels 3/build" --check-stamp-file "C:/gvdb-voxels 3/build/gvdb_library/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCUDAInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-NVIDIA-CUDA.cmake;C:\gvdb-voxels 3\build\CMakeFiles\3.20.1\CMakeCUDACompiler.cmake;C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\cmake\FindGLEW.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\gvdb-voxels 3\build\gvdb_library\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/gvdb-voxels 3/gvdb-voxels 3/source/gvdb_library/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/gvdb-voxels 3/gvdb-voxels 3" "-BC:/gvdb-voxels 3/build" --check-stamp-file "C:/gvdb-voxels 3/build/gvdb_library/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCUDAInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-NVIDIA-CUDA.cmake;C:\gvdb-voxels 3\build\CMakeFiles\3.20.1\CMakeCUDACompiler.cmake;C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\cmake\FindGLEW.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\gvdb-voxels 3\build\gvdb_library\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/gvdb-voxels 3/gvdb-voxels 3/source/gvdb_library/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/gvdb-voxels 3/gvdb-voxels 3" "-BC:/gvdb-voxels 3/build" --check-stamp-file "C:/gvdb-voxels 3/build/gvdb_library/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCUDAInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-NVIDIA-CUDA.cmake;C:\gvdb-voxels 3\build\CMakeFiles\3.20.1\CMakeCUDACompiler.cmake;C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\cmake\FindGLEW.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\gvdb-voxels 3\build\gvdb_library\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/gvdb-voxels 3/gvdb-voxels 3/source/gvdb_library/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/gvdb-voxels 3/gvdb-voxels 3" "-BC:/gvdb-voxels 3/build" --check-stamp-file "C:/gvdb-voxels 3/build/gvdb_library/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCUDAInformation.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Compiler\NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.20\Modules\Platform\Windows-NVIDIA-CUDA.cmake;C:\gvdb-voxels 3\build\CMakeFiles\3.20.1\CMakeCUDACompiler.cmake;C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\cmake\FindGLEW.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\gvdb-voxels 3\build\gvdb_library\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\dummy.cpp" />
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\app_perf.cpp" />
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_allocator.cpp" />
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_camera.cpp" />
+    <CudaCompile Include="..\..\gvdb-voxels 3\source\gvdb_library\src\gvdb_cutils.cu" />
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_model.cpp" />
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_node.cpp" />
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_render_opengl.cpp" />
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_scene.cpp" />
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_types.cpp" />
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_vec.cpp" />
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_volume_3D.cpp" />
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_volume_base.cpp" />
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_volume_gvdb.cpp" />
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\loader_ObjarReader.cpp" />
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\loader_OBJReader.cpp" />
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\loader_Parser.cpp" />
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\string_helper.cpp" />
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\app_perf.h" />
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb.h" />
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_allocator.h" />
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_camera.h" />
+    <None Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_cutils.cuh">
+    </None>
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_model.h" />
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_node.h" />
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_render.h" />
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_scene.h" />
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_types.h" />
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_vec.h" />
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_volume_3D.h" />
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_volume_base.h" />
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_volume_gvdb.h" />
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\loader_ObjarReader.h" />
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\loader_OBJReader.h" />
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\loader_Parser.h" />
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\string_helper.h" />
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\glew\src\glew.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\gvdb-voxels 3\build\ZERO_CHECK.vcxproj">
+      <Project>{A13E28D5-7ED5-3777-AE1F-854CC70D91A3}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.3.targets" />
+  </ImportGroup>
+</Project>

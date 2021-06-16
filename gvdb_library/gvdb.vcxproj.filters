@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\dummy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\app_perf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_allocator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_node.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_render_opengl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_types.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_vec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_volume_3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_volume_base.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_volume_gvdb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\loader_ObjarReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\loader_OBJReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\loader_Parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\string_helper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\glew\src\glew.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\app_perf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_allocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_render.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_vec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_volume_3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_volume_base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_volume_gvdb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\loader_ObjarReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\loader_OBJReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\loader_Parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\string_helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\..\gvdb-voxels 3\source\gvdb_library\src\gvdb_cutils.cu">
+      <Filter>Source Files</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\gvdb-voxels 3\gvdb-voxels 3\source\gvdb_library\src\gvdb_cutils.cuh" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{44DC7D12-3234-38BF-BF26-8C7EB2801166}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C6E49A58-4ECC-376E-8630-2928BC4F9ED3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
